@@ -1,8 +1,7 @@
-**WELCOME TO MY TRANSLATE API**
+#myTranslateAPI
 
-> Oficial API URL: https://mytranslate-api.herokuapp.com/
-### Translate Route
-***
+`Oficial API URL: https://mytranslate-api.herokuapp.com/`
+## Translate Route
 - **translate/ [POST]**
 	> translate your texts
 
@@ -48,8 +47,7 @@
 			},
 		]
 	```
-### User Route
-***
+## User Route
 - **user/authenticate [POST]**
 	> authenticate your account to get your Token
 
@@ -64,3 +62,7 @@
 			}
 		}
 	```
+
+## License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
