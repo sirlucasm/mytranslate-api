@@ -1,6 +1,6 @@
 #myTranslateAPI
 
-`Oficial API URL: <https://mytranslate-api.herokuapp.com/>`
+Oficial API URL: _<https://mytranslate-api.herokuapp.com>_
 ## Translate Route
 - **translate/ [POST]**
 	> translate your texts
