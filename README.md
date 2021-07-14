@@ -9,15 +9,15 @@
 	response example:
 	```json
 		{
-			text: "hello world",
-			result: "Olá Mundo",
-			fromLanguage: {
-				name: "Inglês",
-				shortName: "en"
+			"text": "hello world",
+			"result": "Olá Mundo",
+			"fromLanguage": {
+				"name": "Inglês",
+				"shortName": "en"
 			},
-			toLanguage: {
-				name: "Português",
-				shortName: "pt"
+			"toLanguage": {
+				"name": "Português",
+				"shortName": "pt"
 			}
 		}
 	```
@@ -27,8 +27,8 @@
 	response example:
 	```json
 		{
-			message: "Welcome to MyTranslate API",
-			online: true
+			"message": "Welcome to MyTranslate API",
+			"online": true
 		}
 	```
 - **translate/languages [GET]**
@@ -38,12 +38,12 @@
 	```json
 		[
 			{
-				name: "Português",
-				shortName: "pt"
+				"name": "Português",
+				"shortName": "pt"
 			},
 			{
-				name: "Inglês",
-				shortName: "en"
+				"name": "Inglês",
+				"shortName": "en"
 			},
 		]
 	```
@@ -54,11 +54,11 @@
 	response example:
 	```json
 		{
-			token: "[token here]",
-			user: {
-				_id: "60ef1a98a44bc21b00627bf5",
-				name: "Your Name",
-				email: "youremail@test.com",
+			"token": "[token here]",
+			"user": {
+				"_id": "60ef1a98a44bc21b00627bf5",
+				"name": "Your Name",
+				"email": "youremail@test.com",
 			}
 		}
 	```
