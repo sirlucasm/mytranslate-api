@@ -2,12 +2,13 @@
 
 > Oficial API URL: https://mytranslate-api.herokuapp.com/
 ### Translate Route
+***
 - **translate/ [POST]**
 	> translate your texts
 
 	_needs token_
 	response example:
-	```javascript
+	```json
 		{
 			"text": "hello world",
 			"result": "Olá Mundo",
@@ -25,7 +26,7 @@
 	> show API status
 
 	response example:
-	```javascript
+	```json
 		{
 			"message": "Welcome to MyTranslate API",
 			"online": true
@@ -35,7 +36,7 @@
 	> list all languages supports
 
 	response example:
-	```javascript
+	```json
 		[
 			{
 				"name": "Português",
@@ -48,11 +49,12 @@
 		]
 	```
 ### User Route
+***
 - **user/authenticate [POST]**
 	> authenticate your account to get your Token
 
 	response example:
-	```javascript
+	```json
 		{
 			"token": "[token here]",
 			"user": {
