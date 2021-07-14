@@ -7,7 +7,7 @@
 
 	_needs token_
 	response example:
-	```json
+	```javascript
 		{
 			"text": "hello world",
 			"result": "Olá Mundo",
@@ -25,7 +25,7 @@
 	> show API status
 
 	response example:
-	```json
+	```javascript
 		{
 			"message": "Welcome to MyTranslate API",
 			"online": true
@@ -35,7 +35,7 @@
 	> list all languages supports
 
 	response example:
-	```json
+	```javascript
 		[
 			{
 				"name": "Português",
@@ -52,7 +52,7 @@
 	> authenticate your account to get your Token
 
 	response example:
-	```json
+	```javascript
 		{
 			"token": "[token here]",
 			"user": {
