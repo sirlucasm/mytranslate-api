@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Automático",
+		"shortName": "auto"
+	},
+	{
+		"name": "Espanhol",
+		"shortName": "es"
+	},
+	{
+		"name": "Francês",
+		"shortName": "fr"
+	},
+	{
+		"name": "Inglês",
+		"shortName": "en"
+	},
+	{
+		"name": "Italiano",
+		"shortName": "it"
+	},
+	{
+		"name": "Português",
+		"shortName": "pt"
+	}
+]
