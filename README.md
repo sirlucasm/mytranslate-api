@@ -63,6 +63,46 @@ Oficial API URL: _<https://mytranslate-api.herokuapp.com>_
 		}
 	```
 
+## TokenRequest Route
+- **token-request/ [GET]**
+	> make a token request
+
+	response example:
+	```json
+		{
+			"request": {
+				"code": "60f0798c8f6542069856fc0e",
+				"email": "example@teste.com",
+				"name": "Example Name",
+				"status": "pending",
+				"reason": "Example reason description",
+				"url": "https://mytranslate-api.herokuapp.com/token-request/my?code=60f0798c8f6542069856fc0e"
+			},
+			"message": "Token request sended successfully"
+		}
+	```
+- **token-request/my?code=_your-request-code-here_ [GET]**
+	> find your token request on application
+
+	response example:
+	```json
+		{
+				"code": "60f0798c8f6542069856fc0e",
+				"email": "example@teste.com",
+				"name": "Example Name",
+				"status": "pending",
+				"reason": "Example reason description"
+		}
+	```
+	types of status:
+	```
+		STATUS: {
+			pending,
+			active,
+			cancelled
+		}
+	```
+
 ## License
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.

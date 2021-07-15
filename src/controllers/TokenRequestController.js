@@ -10,16 +10,18 @@ module.exports = {
 			const url = process.env.NODE_ENV !== 'production' ? `${APP_URL}:${APP_PORT}` : APP_URL;
 			const tokenRequest = await TokenRequest.create(req.query);
 			return res.status(201).json({
-				data: {
+				request: {
 					code: tokenRequest.id,
 					email: tokenRequest.email,
+					name: tokenRequest.name,
+					status: tokenRequest.status,
 					reason: tokenRequest.reason,
 					url: `${url}/token-request/my?code=${tokenRequest.id}`
 				},
 				message: 'Token request sended successfully'
 			});
 		} catch (error) {
-			res.status(500).json({ message: error.message })
+			res.status(500).json({ message: error.message });
 		}
 	},
 
@@ -32,10 +34,12 @@ module.exports = {
 			return res.status(200).json({
 				code: tokenRequest.id,
 				email: tokenRequest.email,
+				name: tokenRequest.name,
+				status: tokenRequest.status,
 				reason: tokenRequest.reason,
 			});
 		} catch (error) {
-			res.status(500).json({ message: error.message })
+			res.status(500).json({ message: error.message });
 		}
 	},
 }
