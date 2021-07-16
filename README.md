@@ -91,17 +91,22 @@ Oficial API URL: _<https://mytranslate-api.herokuapp.com>_
 				"email": "example@teste.com",
 				"name": "Example Name",
 				"status": "pending",
-				"reason": "Example reason description"
+				"reason": "Example reason description",
+				"token": "wait admin accept your request"
 		}
 	```
+	the **reason** field is optional, but also an administrator can respond to the reason for rejecting their request in this field.<br>
 	types of status:
 	```
 		STATUS: {
 			pending,
 			active,
-			cancelled
+			cancelled,
+			rejected
 		}
 	```
+
+	An administrator will respond to your request and he can accept or reject it.
 
 ## License
 
