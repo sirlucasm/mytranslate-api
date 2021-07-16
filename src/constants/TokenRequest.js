@@ -2,6 +2,7 @@ module.exports = {
 	STATUS: {
 		PENDING: 'pending',
 		ACTIVE: 'active',
-		CANCELLED: 'cancelled'
+		CANCELLED: 'cancelled',
+		REJECTED: 'rejected'
 	},
 }
