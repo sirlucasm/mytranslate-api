@@ -4,7 +4,7 @@ const { STATUS } = require('../constants/TokenRequest');
 
 module.exports = {
 	request: async (req, res) => {
-		const { email, reason } = req.query;
+		const { email } = req.query;
 		try {
 			if (await TokenRequest.findOne({ email })) return res.status(400).json({ message: 'Token request already sent.' });
 			
